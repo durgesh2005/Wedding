@@ -1,0 +1,380 @@
+* {
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    z-index: 999;
+    justify-content: space-around;
+     background-color: rgba(242, 238, 238, 0.8);
+    bottom:0;
+}
+
+nav a {
+    color: black;
+    cursor: pointer;
+    width: 25%;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(193, 187, 187);
+}
+
+.logo {
+    position: absolute;
+    color: white;
+    z-index:999;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.head {
+    background-image: url('images/wedding_couple.jpg');
+    background-size: cover;
+    position: relative;
+    filter: saturate(0.5);
+    width: 100%;
+    text-align: center;
+    height: 667px;
+    background-repeat: no-repeat;
+}
+
+.head-content {
+    position: absolute;
+    top: 45%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.head-content h1 {
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.head-content h2 {
+    font-size: 35px;
+    font-weight: 200;
+    padding: 20px 0px;
+    letter-spacing: 5px;
+}
+
+.head-content h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+}
+
+.Jane-john {
+    filter: saturate(0.6);
+    background-color: #ffdddd!important;
+    width: 100%;
+    padding-bottom: 90px;
+    padding-top:60px;
+    text-align: center;
+}
+
+.Jane-john h1 {
+    color: gray;
+    font-weight: 300;
+    font-size:40px;
+    padding:20px 0px 40px;
+}
+
+.Jane-john p {
+    width: 60%;
+    padding: 30px 5px;
+    line-height: 35px;
+    font-size: 18px;
+    color: rgb(58, 57, 57);
+    margin:0 auto;
+    text-align: left;
+}
+
+.Jane-john button {
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    margin-top:40px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+}
+
+.Jane-john button:hover {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+
+.flowers {
+    margin-top:0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: saturate(1);
+    height: 668px;
+    width: 100%;
+    background-image: url('images/flowers.jpg');
+}
+
+.h1 {
+color: white;
+position: absolute;
+top: 40%;
+text-align: center;
+left: 50%;
+transform: translate(-50% , -50%);
+}
+
+.h1 h1 {
+    font-size: 80px;
+    padding-bottom: 80px;
+    font-weight: 200;
+}
+
+.h1 p {
+    font-size: 35px;
+}
+
+.wedding {
+    background-color: #ffdddd!important;
+    padding-top: 100px;
+    filter: saturate(0.6);
+    text-align: center;
+    padding-bottom:70px;
+}
+.wedding h1 {
+    color: gray;
+    font-size: 45px;
+    font-weight: 300;
+    word-spacing: 5px;
+}
+
+.wedding img {
+    border-radius: 10px;
+    margin: 80px 0px;
+}
+
+.date-place {
+    width: 60%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.date-place h4 {
+ font-size: 30px;
+ font-weight: 300;
+ padding: 10px 0px 20px;
+}
+
+.date-place p {
+    font-size: 20px;
+    padding: 10px 0px;
+    font-weight: 300;
+}
+
+.RSVP {
+    background-color: #facece!important;
+    text-align: center;
+    padding: 100px 0px 50px;
+}
+.RSVP h2 {
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.RSVP p {
+    font-size: 20px;
+    padding:40px 0px;
+    letter-spacing: 3px;
+}
+
+.RSVP button {
+       border: none;
+       padding: 20px 60px;
+       border-radius: 7px;
+       opacity: 0.6;
+       color: white;
+       background-color: #f44336;
+       font-size: 25px;
+}
+
+.RSVP button:hover {
+    opacity: 1;
+    background-color: rgb(208, 202, 202);
+    color: black;
+    cursor: pointer;
+}
+
+.RSVP-card {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.3;
+    display: none;
+    background-color: black !important;
+    z-index: 999;
+}
+
+.rsvp-card-pop {
+    background-color: white;
+    width: 50%;
+    position: fixed;
+    z-index: 999;
+    animation: pop-up 1s;
+    top: 100px;
+    left: 25%;
+     margin:0 auto;
+    text-align: center;
+    padding:50px 80px 80px;
+}
+
+@keyframes pop-up {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.rsvp-card-pop h2 {
+    font-size: 40px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.rsvp-card-pop p {
+    padding: 14px 0px 20px;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+
+.rsvp-card-pop input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.rsvp-card-pop button {
+    float: left;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 0px;
+    padding: 10px;
+}
+
+#going {
+    background-color: green;
+}
+
+#cant {
+    background-color: red;
+    opacity: 0.7;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    margin-bottom:45px;
+    color: white;
+}
+
+footer a {
+    color: white;
+
+}
+
+@media screen and (max-width:400px) {
+    .head {
+        background-position: 50%;
+        height: 500px;
+    }
+    .head h1 {
+        font-size: 60px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    
+
+.Jane-john {
+      padding:0px 20px;
+    padding-bottom: 50px;
+    padding-top:40px;
+}
+
+.Jane-john h1 {
+    font-size:30px;
+    padding:20px 0px 40px;
+}
+
+.Jane-john img {
+    width: 100%;
+}
+
+.Jane-john p {
+    width: 100%;
+    padding: 30px 5px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+.wedding {
+    padding: 60px 20px;
+}
+.wedding h1 {
+    font-size: 25px;
+}
+
+.wedding img {
+    width: 100%;
+}
+
+
+.date-place {
+    width: 100%;
+    flex-direction: column;
+}
+
+.date-place h4 {
+ font-size: 30px;
+ font-weight: 300;
+ padding: 10px 0px 20px;
+}
+
+
+.RSVP {
+    background-color: #facece!important;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+.rsvp-card-pop {
+    width: 100%;
+    left: 0%;
+    padding:20px;
+}
+
+}
